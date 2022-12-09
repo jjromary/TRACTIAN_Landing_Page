@@ -9,12 +9,12 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background-color: ${(props) => props.theme["background-default"]};
+        background-color: ${(props) => props.theme["blue-brand"]};
         color: ${(props) => props.theme["base-text"]};
         -webkit-font-smoothing: antialiased;
     }
 
-    body, input, text-area, button {
+    body, input, text-area, button, span {
         font: 400 1rem Poppins, sans-serif;
     }
 `;
