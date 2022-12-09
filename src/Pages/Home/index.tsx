@@ -1,4 +1,4 @@
-import { Header, HomeContainer, ImageContent, SectionOne, Summary, Title, TopContent, TypesSolutions } from "./styles";
+import { CardContent, Header, HomeContainer, ImageContent, SectionTwo, Summary, Title, TopContent, TypesSolutions } from "./styles";
 import logo from '../../Assets/logo.svg'
 import sensorFunc from '../../Assets/sensor_func.svg'
 import iconVibration from '../../Assets/icon_vibration.svg'
@@ -9,6 +9,7 @@ import { dataCardMonitoramento, dataCardIoT, dataCardAtivos, dataCardPreventiva,
 import TitleSection from "../../Components/Title";
 import Card from "../../Components/Card";
 import ButtonContact from "../../Components/Button";
+import Section from "../../Components/Section";
 
 export default function Home() {
   return (
@@ -50,36 +51,43 @@ export default function Home() {
         </TypesSolutions>
       </Summary>
 
-      <SectionOne>
+      <Section>
         <TitleSection title="Como Funciona?" />
-        <Card
-          title={dataCardMonitoramento.title}
-          description={dataCardMonitoramento.description}
-        >
-          <ButtonContact titleButton="Quero monitorar Online" />
-        </Card>
+        <CardContent>
+          <Card
+            title={dataCardMonitoramento.title}
+            description={dataCardMonitoramento.description}
+          >
+            <ButtonContact titleButton="Quero monitorar Online" />
+          </Card>
 
-        <Card
-          title={dataCardIoT.title}
-          description={dataCardIoT.description}
-        >
-          <ButtonContact titleButton="Quero mais insights" />
-        </Card>
+          <Card
+            title={dataCardIoT.title}
+            description={dataCardIoT.description}
+          >
+            <ButtonContact titleButton="Quero mais insights" />
+          </Card>
 
-        <Card
-          title={dataCardAtivos.title}
-          description={dataCardAtivos.description}
-        >
-          <ButtonContact titleButton="Veja CMMS na prática" />
-        </Card>
+          <Card
+            title={dataCardAtivos.title}
+            description={dataCardAtivos.description}
+          >
+            <ButtonContact titleButton="Veja CMMS na prática" />
+          </Card>
 
-        <Card
-          title={dataCardPreventiva.title}
-          description={dataCardPreventiva.description}
-        >
-          <ButtonContact titleButton="Ver o sistema Preditivo" />
-        </Card>
-      </SectionOne>
+          <Card
+            title={dataCardPreventiva.title}
+            description={dataCardPreventiva.description}
+          >
+            <ButtonContact titleButton="Ver o sistema Preditivo" />
+          </Card>
+        </CardContent>
+
+      </Section>
+      <SectionTwo>
+        <TitleSection title="Tenha maior controle dos seus ativos " />
+
+      </SectionTwo>
     </HomeContainer>
   )
 }

@@ -105,13 +105,25 @@ export const TypesSolutions = styled.div`
   }
 `;
 
-export const SectionOne = styled.div`
-  width: 100%;
-  height: 1100px;
-  margin-top: 2rem;
-  background-color: ${(props) => props.theme["background-default"]};
-
+export const CardContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 2rem;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+  }
 `;
+
+export const SectionTwo = styled.div``;
