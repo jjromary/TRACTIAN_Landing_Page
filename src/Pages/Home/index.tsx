@@ -1,4 +1,4 @@
-import { AssetControlContent, CardContent, Header, HomeContainer, ImageContent, SensorContent, SubTitle, Summary, Title, TopContent, TypesSolutions } from "./styles";
+import { AssetControlContent, CardContent, Header, HomeContainer, ImageContainer, ImageContent, Sensor, SensorContent, SensorDescrition, SensorName, SubTitle, Summary, Title, TopContent, TypesSolutions } from "./styles";
 import logo from '../../Assets/logo.svg'
 import sensorFunc from '../../Assets/sensor_func.svg'
 import iconVibration from '../../Assets/icon_vibration.svg'
@@ -105,17 +105,37 @@ export default function Home() {
 
       <Section>
         <TitleSection title="Conheça os nosso sensores" />
+
         <SensorContent>
-          <SubTitle>
-            Sensor de Vibração
-          </SubTitle>
-          <img src={sensorVibration} />
+
+          <Sensor>
+            <SensorName>
+              Sensor de Vibração
+            </SensorName>
+            <SensorDescrition>
+              Com tecnologia plug & play, a instalação foi desenhada para ser rápida e descomplicada. A conectividade 2G/3G/4G permite o acompanhamento de forma remota e em tempo real.
+            </SensorDescrition>
+          </Sensor>
+
+          <ImageContainer>
+            <img src={sensorVibration} />
+
+          </ImageContainer>
         </SensorContent>
+
         <SensorContent>
-          <SubTitle>
-            Sensor de Energia
-          </SubTitle>
-          <img src={sensorEnergy} />
+          <Sensor>
+            <SensorName>
+              Sensor de Energia
+            </SensorName>
+            <SensorDescrition>
+              Acesse informações valiosas sobre a qualidade energética da sua operação e visualize os indicadores da rede elétrica em tempo real.
+            </SensorDescrition>
+          </Sensor>
+          <ImageContainer>
+
+            <img src={sensorEnergy} />
+          </ImageContainer>
 
         </SensorContent>
       </Section>

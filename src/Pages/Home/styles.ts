@@ -1,30 +1,25 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.main`
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   @media (min-width: 375px) {
-    width: 90%;
   }
 
   @media (min-width: 425px) {
-    width: 90%;
   }
 
   @media (min-width: 768px) {
-    width: 90%;
   }
 
   @media (min-width: 1024px) {
-    width: 90%;
   }
 
   @media (min-width: 1440px) {
-    width: 90%;
   }
 `;
 
@@ -127,6 +122,7 @@ export const CardContent = styled.div`
 `;
 
 export const AssetControlContent = styled.div`
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,6 +137,11 @@ export const AssetControlContent = styled.div`
       height: 450px;
     }
   }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 `;
 
 export const SensorContent = styled.div`
@@ -149,13 +150,62 @@ export const SensorContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+
+  img {
+    margin-top: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  width: 235px;
+  display: flex;
+  justify-content: center;
+`;
+
+export const Sensor = styled.span`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+`;
+
+export const SensorName = styled.span`
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: ${(props) => props.theme["base-text"]};
+  display: flex;
+  justify-content: left;
+
+  @media (min-width: 1024px) {
+    width: 250px;
+  }
+`;
+export const SensorDescrition = styled.span`
+  margin-top: 1rem;
 `;
 
 export const SubTitle = styled.span`
   width: 90%;
-  font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   text-align: center;
   color: ${(props) => props.theme["base-text"]};
+
+  @media (min-width: 1024px) {
+    width: 400px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 40%;
+  }
 `;

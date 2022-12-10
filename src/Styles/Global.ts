@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
         background-color: ${(props) => props.theme["blue-brand"]};
         color: ${(props) => props.theme["base-text"]};
         -webkit-font-smoothing: antialiased;
+        padding-bottom: 5rem;
     }
 
     body, input, text-area, button, span {
