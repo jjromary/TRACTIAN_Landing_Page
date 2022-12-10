@@ -1,9 +1,11 @@
-import { AssetControlContent, CardContent, Header, HomeContainer, ImageContent, SubTitle, Summary, Title, TopContent, TypesSolutions } from "./styles";
+import { AssetControlContent, CardContent, Header, HomeContainer, ImageContent, SensorContent, SubTitle, Summary, Title, TopContent, TypesSolutions } from "./styles";
 import logo from '../../Assets/logo.svg'
 import sensorFunc from '../../Assets/sensor_func.svg'
 import iconVibration from '../../Assets/icon_vibration.svg'
 import iconEnergy from '../../Assets/icon_energy.svg'
 import iconMonitor from '../../Assets/icon_monitor.svg'
+import sensorEnergy from '../../Assets/sensor_energy.svg'
+import sensorVibration from '../../Assets/sensor_vibration.svg'
 import dashboardAsset from '../../Assets/dashboardImage.jpeg'
 import Solution from "../../Components/Solution";
 import { dataCardMonitoramento, dataCardIoT, dataCardAtivos, dataCardPreventiva, dataEnergy, dataSupervisorio, dataVibration } from "../../Data/data";
@@ -97,6 +99,25 @@ export default function Home() {
 
           <img src={dashboardAsset} />
         </AssetControlContent>
+      </Section>
+
+      {/* Session Sensors */}
+
+      <Section>
+        <TitleSection title="Conheça os nosso sensores" />
+        <SensorContent>
+          <SubTitle>
+            Sensor de Vibração
+          </SubTitle>
+          <img src={sensorVibration} />
+        </SensorContent>
+        <SensorContent>
+          <SubTitle>
+            Sensor de Energia
+          </SubTitle>
+          <img src={sensorEnergy} />
+
+        </SensorContent>
       </Section>
     </HomeContainer>
   )

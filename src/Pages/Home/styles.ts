@@ -135,13 +135,26 @@ export const AssetControlContent = styled.div`
     margin-top: 1rem;
     width: 250px;
     height: 297px;
+
+    @media (min-width: 768px) {
+      width: 350px;
+      height: 450px;
+    }
   }
 `;
 
-export const SubTitle = styled.div`
+export const SensorContent = styled.div`
+  width: 90%;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const SubTitle = styled.span`
   width: 90%;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   margin-top: 1rem;
   text-align: center;
   color: ${(props) => props.theme["base-text"]};

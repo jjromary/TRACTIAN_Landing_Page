@@ -8,7 +8,7 @@ export const TitleContainer = styled.div`
   margin-top: 1.5rem;
 `;
 
-export const TitleContent = styled.div`
+export const TitleContent = styled.span`
   width: 90%;
   font-weight: 700;
   font-size: 1.875rem;
