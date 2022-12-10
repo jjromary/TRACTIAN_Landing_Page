@@ -46,7 +46,7 @@ export const Summary = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 1rem;
+  margin: 1rem 0 2rem 0;
 `;
 
 export const TopContent = styled.div`
@@ -126,4 +126,23 @@ export const CardContent = styled.div`
   }
 `;
 
-export const SectionTwo = styled.div``;
+export const AssetControlContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    margin-top: 1rem;
+    width: 250px;
+    height: 297px;
+  }
+`;
+
+export const SubTitle = styled.div`
+  width: 90%;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 1rem;
+  text-align: center;
+  color: ${(props) => props.theme["base-text"]};
+`;

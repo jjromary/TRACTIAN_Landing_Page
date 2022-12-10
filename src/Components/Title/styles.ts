@@ -9,6 +9,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const TitleContent = styled.div`
+  width: 90%;
   font-weight: 700;
   font-size: 1.875rem;
   text-align: center;

@@ -1,9 +1,10 @@
-import { CardContent, Header, HomeContainer, ImageContent, SectionTwo, Summary, Title, TopContent, TypesSolutions } from "./styles";
+import { AssetControlContent, CardContent, Header, HomeContainer, ImageContent, SubTitle, Summary, Title, TopContent, TypesSolutions } from "./styles";
 import logo from '../../Assets/logo.svg'
 import sensorFunc from '../../Assets/sensor_func.svg'
 import iconVibration from '../../Assets/icon_vibration.svg'
 import iconEnergy from '../../Assets/icon_energy.svg'
 import iconMonitor from '../../Assets/icon_monitor.svg'
+import dashboardAsset from '../../Assets/dashboardImage.jpeg'
 import Solution from "../../Components/Solution";
 import { dataCardMonitoramento, dataCardIoT, dataCardAtivos, dataCardPreventiva, dataEnergy, dataSupervisorio, dataVibration } from "../../Data/data";
 import TitleSection from "../../Components/Title";
@@ -51,6 +52,7 @@ export default function Home() {
         </TypesSolutions>
       </Summary>
 
+      {/* Session how to works */}
       <Section>
         <TitleSection title="Como Funciona?" />
         <CardContent>
@@ -84,10 +86,18 @@ export default function Home() {
         </CardContent>
 
       </Section>
-      <SectionTwo>
-        <TitleSection title="Tenha maior controle dos seus ativos " />
 
-      </SectionTwo>
+      {/* Session Asset control  */}
+      <Section>
+        <TitleSection title="Tenha maior controle dos seus ativos " />
+        <AssetControlContent>
+          <SubTitle>
+            Dashboards em tempo real informam a saúde de seus ativos facilitando o seu planejamento e evitando paradas desnecessárias
+          </SubTitle>
+
+          <img src={dashboardAsset} />
+        </AssetControlContent>
+      </Section>
     </HomeContainer>
   )
 }
