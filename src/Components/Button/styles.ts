@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ButtonContainer = styled.div`
   margin-top: 2rem;
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,7 @@ export const ButtonContainer = styled.div`
 export const ButtonContent = styled.button`
   border: none;
   border-radius: 8px;
-  width: 90%;
+  width: 100%;
   height: 40px;
   background: ${(props) => props.theme["base-button"]};
   font-weight: 700;

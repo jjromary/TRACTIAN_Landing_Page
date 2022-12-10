@@ -9,10 +9,9 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background-color: ${(props) => props.theme["blue-brand"]};
+        background-color: ${(props) => props.theme["background-default"]};
         color: ${(props) => props.theme["base-text"]};
         -webkit-font-smoothing: antialiased;
-        padding-bottom: 5rem;
     }
 
     body, input, text-area, button, span {

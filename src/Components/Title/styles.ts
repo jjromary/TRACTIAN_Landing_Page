@@ -5,7 +5,7 @@ export const TitleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 `;
 
 export const TitleContent = styled.span`

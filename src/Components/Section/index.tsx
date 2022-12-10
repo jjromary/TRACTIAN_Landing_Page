@@ -3,11 +3,12 @@ import { SectionContainer } from "./styles";
 
 interface SectionProps {
   children: ReactNode;
+  bgColor?: string;
 }
 
-export default function Section({ children }: SectionProps) {
+export default function Section({ children, bgColor }: SectionProps) {
   return (
-    <SectionContainer>
+    <SectionContainer style={{ background: bgColor }}>
       {children}
     </SectionContainer>
   )

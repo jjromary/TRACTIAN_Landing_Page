@@ -1,4 +1,4 @@
-import { AssetControlContent, CardContent, Header, HomeContainer, ImageContainer, ImageContent, Sensor, SensorContent, SensorDescrition, SensorName, SubTitle, Summary, Title, TopContent, TypesSolutions } from "./styles";
+import { AssetControlContent, CardContent, ClientsContainer, Header, HomeContainer, ImageContainer, ImageContent, Sensor, SensorContent, SensorDescrition, SensorName, SubTitle, Summary, Title, TopContent, TypesSolutions } from "./styles";
 import logo from '../../Assets/logo.svg'
 import sensorFunc from '../../Assets/sensor_func.svg'
 import iconVibration from '../../Assets/icon_vibration.svg'
@@ -6,6 +6,16 @@ import iconEnergy from '../../Assets/icon_energy.svg'
 import iconMonitor from '../../Assets/icon_monitor.svg'
 import sensorEnergy from '../../Assets/sensor_energy.svg'
 import sensorVibration from '../../Assets/sensor_vibration.svg'
+
+import logoGoodyear from '../../Assets/logoGoodyear.svg'
+import logoKarcher from '../../Assets/logoKarcher.svg'
+import logoMartMinas from '../../Assets/logoMartMinas.svg'
+import logoPetrobras from '../../Assets/logoPetrobras.svg'
+import logoSuzano from '../../Assets/logoSuzano.svg'
+import logoTigre from '../../Assets/logoTigre.svg'
+import logoBoticario from '../../Assets/logoBoticario.svg'
+import logoRenault from '../../Assets/logoRenault.svg'
+
 import dashboardAsset from '../../Assets/dashboardImage.jpeg'
 import Solution from "../../Components/Solution";
 import { dataCardMonitoramento, dataCardIoT, dataCardAtivos, dataCardPreventiva, dataEnergy, dataSupervisorio, dataVibration } from "../../Data/data";
@@ -90,7 +100,7 @@ export default function Home() {
       </Section>
 
       {/* Session Asset control  */}
-      <Section>
+      <Section >
         <TitleSection title="Tenha maior controle dos seus ativos " />
         <AssetControlContent>
           <SubTitle>
@@ -102,7 +112,6 @@ export default function Home() {
       </Section>
 
       {/* Session Sensors */}
-
       <Section>
         <TitleSection title="Conheça os nosso sensores" />
 
@@ -139,6 +148,29 @@ export default function Home() {
 
         </SensorContent>
       </Section>
+
+      {/* Session Clients */}
+      <Section>
+        <TitleSection title="Nossos principais clientes" />
+        <ClientsContainer>
+          <img src={logoGoodyear} />
+          <img src={logoMartMinas} />
+          <img src={logoKarcher} />
+          <img src={logoPetrobras} />
+          <img src={logoSuzano} />
+          <img src={logoBoticario} />
+          <img src={logoTigre} />
+          <img src={logoRenault} />
+        </ClientsContainer>
+      </Section>
+
+      {/* Session feedback */}
+
+      <Section bgColor="#07074E">
+        <TitleSection title="Alguns relatos de nossos clientes" colorText="#F9FBFC" />
+
+
+      </Section>
     </HomeContainer>
   )
-}
+} 

@@ -27,7 +27,7 @@ export const Header = styled.header`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  background-color: ${(props) => props.theme["blue-brand"]};
 
   img {
     @media (min-width: 1024px) {
@@ -41,7 +41,7 @@ export const Summary = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem 0 2rem 0;
+  background-color: ${(props) => props.theme["blue-brand"]};
 `;
 
 export const TopContent = styled.div`
@@ -207,5 +207,24 @@ export const SubTitle = styled.span`
 
   @media (min-width: 1440px) {
     width: 40%;
+  }
+`;
+
+export const ClientsContainer = styled.div`
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+  img {
+    width: 250px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 `;
