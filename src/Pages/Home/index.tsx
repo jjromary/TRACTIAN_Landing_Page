@@ -153,6 +153,7 @@ export default function Home() {
             <img src={sensorVibration} />
 
           </ImageContainer>
+
         </SensorContent>
 
         <SensorContent>
@@ -171,6 +172,8 @@ export default function Home() {
 
         </SensorContent>
       </Section>
+
+      <ButtonContact titleButton="Solititar demonstração" />
 
       {/* Session Clients */}
       <Section>

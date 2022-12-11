@@ -19,6 +19,11 @@ export const ButtonContent = styled.button`
   font-size: 1rem;
   color: ${(props) => props.theme["base-white"]};
 
+  :hover {
+    background: ${(props) => props.theme["button-hover"]};
+    transition: background-color 0.2s;
+  }
+
   @media (min-width: 1440px) {
     width: 288px;
   }
