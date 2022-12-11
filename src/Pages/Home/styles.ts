@@ -28,6 +28,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
   background-color: ${(props) => props.theme["blue-brand"]};
+  padding-top: 3rem;
 
   img {
     @media (min-width: 1024px) {
@@ -42,9 +43,12 @@ export const Summary = styled.div`
   flex-direction: column;
   justify-content: center;
   background-color: ${(props) => props.theme["blue-brand"]};
+  padding-bottom: 3rem;
 `;
 
 export const TopContent = styled.div`
+  width: 90%;
+  margin: 0 auto;
   @media (min-width: 1024px) {
     display: flex;
     justify-content: space-between;
