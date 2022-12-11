@@ -4,6 +4,7 @@ export const CardFeedbackContainer = styled.div`
   width: 250px;
   height: 300px;
   background-color: ${(props) => props.theme["background-default"]};
+  box-shadow: 6px 6px 4px #3dcc84;
   border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
@@ -44,5 +45,5 @@ export const FeedbackUser = styled.span`
   margin-top: 0.5rem;
   font-size: 0.75rem;
   line-height: 18px;
-  text-align: center;
+  text-align: left;
 `;

@@ -231,13 +231,15 @@ export const ClientsContainer = styled.div`
 
 export const FeedbackContainer = styled.div`
   display: flex;
+  width: 90%;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
   gap: 2rem;
-`;
 
-// export const FeedbackContent = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// `;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+`;

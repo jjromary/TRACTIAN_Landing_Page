@@ -23,5 +23,5 @@ export const Description = styled.span`
   margin-top: 1rem;
   font-weight: 400;
   font-size: 0.75rem;
-  text-align: center;
+  text-align: left;
 `;
