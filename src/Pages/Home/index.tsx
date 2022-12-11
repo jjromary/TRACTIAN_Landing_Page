@@ -1,4 +1,4 @@
-import { AssetControlContent, CardContent, ClientsContainer, Header, HomeContainer, ImageContainer, ImageContent, Sensor, SensorContent, SensorDescrition, SensorName, SubTitle, Summary, Title, TopContent, TypesSolutions } from "./styles";
+import { AssetControlContent, CardContent, ClientsContainer, FeedbackContainer, Header, HomeContainer, ImageContainer, ImageContent, Sensor, SensorContent, SensorDescrition, SensorName, SubTitle, Summary, Title, TopContent, TypesSolutions } from "./styles";
 import logo from '../../Assets/logo.svg'
 import sensorFunc from '../../Assets/sensor_func.svg'
 import iconVibration from '../../Assets/icon_vibration.svg'
@@ -15,6 +15,11 @@ import logoSuzano from '../../Assets/logoSuzano.svg'
 import logoTigre from '../../Assets/logoTigre.svg'
 import logoBoticario from '../../Assets/logoBoticario.svg'
 import logoRenault from '../../Assets/logoRenault.svg'
+import Avatar1 from '../../Assets/Avatar1.svg'
+import Avatar2 from '../../Assets/Avatar2.svg'
+import Avatar3 from '../../Assets/Avatar3.svg'
+import Avatar4 from '../../Assets/Avatar4.svg'
+
 
 import dashboardAsset from '../../Assets/dashboardImage.jpeg'
 import Solution from "../../Components/Solution";
@@ -23,6 +28,7 @@ import TitleSection from "../../Components/Title";
 import Card from "../../Components/Card";
 import ButtonContact from "../../Components/Button";
 import Section from "../../Components/Section";
+import CardFeedback from "../../Components/CardFeedback";
 
 export default function Home() {
   return (
@@ -165,9 +171,36 @@ export default function Home() {
       </Section>
 
       {/* Session feedback */}
-
       <Section bgColor="#07074E">
         <TitleSection title="Alguns relatos de nossos clientes" colorText="#F9FBFC" />
+        <FeedbackContainer>
+          <CardFeedback
+            avatar={Avatar1}
+            name="Maria"
+            position="Especialista em Manutenção"
+            feedback="Com a TRACTIAN, consigo acompanhar 100% o que está acontecendo na fábrica. Tudo é mais rápido, automático e interativo. Unindo monitoramento online, gestão de ordens de serviço e histórico acessível, fica mais fácil colocar a casa em ordem."
+          />
+          <CardFeedback
+            avatar={Avatar2}
+            name="José"
+            position="Engenheiro Industrial"
+            feedback="Hoje utilizamos diariamente o sistema da Tractian que melhorou a eficiência da nossa operação, facilitando muito nosso dia a dia na manutenção. Além disso, o time Tractian é responsivo e todo o sistema está sempre evoluindo junto com feedback do cliente."
+          />
+          <CardFeedback
+            avatar={Avatar3}
+            name="Lúcia"
+            position="Gerente de Operação"
+            feedback="Os sensores trouxeram maior segurança, precisão e confiabilidade. O melhor é que conseguimos acompanhar os ativos em tempo real pela plataforma ou aplicativo no celular, com as informações na palma da mão. "
+          />
+          <CardFeedback
+            avatar={Avatar4}
+            name="Ádila"
+            position="Supervisora de Manutenção Geral"
+            feedback="Antes da TRACTIAN, a falha acontecia sem que nós tivéssemos nenhuma chance de reação. Agora nós conseguimos identificar qualquer anomalia fora do normal e isso nos permite fazer a intervenção antes que a quebra aconteça."
+          />
+
+        </FeedbackContainer>
+
 
 
       </Section>

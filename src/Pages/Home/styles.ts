@@ -228,3 +228,16 @@ export const ClientsContainer = styled.div`
     justify-content: center;
   }
 `;
+
+export const FeedbackContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+`;
+
+// export const FeedbackContent = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// `;
