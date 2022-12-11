@@ -16,6 +16,7 @@ import logoSuzano from '../../Assets/logoSuzano.svg'
 import logoTigre from '../../Assets/logoTigre.svg'
 import logoBoticario from '../../Assets/logoBoticario.svg'
 import logoRenault from '../../Assets/logoRenault.svg'
+
 import Avatar1 from '../../Assets/Avatar1.svg'
 import Avatar2 from '../../Assets/Avatar2.svg'
 import Avatar3 from '../../Assets/Avatar3.svg'
