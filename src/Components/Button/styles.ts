@@ -6,6 +6,7 @@ export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 `;
 
 export const ButtonContent = styled.button`

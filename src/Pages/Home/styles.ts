@@ -234,7 +234,7 @@ export const FeedbackContainer = styled.div`
   width: 90%;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin: 2rem 0;
   gap: 2rem;
 
   @media (min-width: 768px) {
@@ -242,4 +242,64 @@ export const FeedbackContainer = styled.div`
     justify-content: center;
     flex-wrap: wrap;
   }
+`;
+
+export const FooterContainer = styled.footer`
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+`;
+
+export const TitleForm = styled.span`
+  margin-top: 2rem;
+  font-size: 1.5rem;
+`;
+
+export const FormContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 2rem;
+`;
+
+export const FormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const LabelField = styled.label``;
+
+export const InputField = styled.input`
+  border: 1px solid ${(props) => props.theme["base-text"]};
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+
+  :focus {
+    outline: 1px solid ${(props) => props.theme["base-button"]};
+    border: none;
+  }
+`;
+
+export const SubmitContent = styled.div`
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+`;
+
+export const SocialContent = styled.div`
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+`;
+
+export const DataTractian = styled.div`
+  text-align: center;
+  margin-top: 2rem;
 `;

@@ -1,5 +1,6 @@
-import { AssetControlContent, CardContent, ClientsContainer, FeedbackContainer, Header, HomeContainer, ImageContainer, ImageContent, Sensor, SensorContent, SensorDescrition, SensorName, SubTitle, Summary, Title, TopContent, TypesSolutions } from "./styles";
+import { AssetControlContent, CardContent, ClientsContainer, DataTractian, FeedbackContainer, FooterContainer, FormContainer, FormContent, Header, HomeContainer, ImageContainer, ImageContent, InputField, LabelField, Sensor, SensorContent, SensorDescrition, SensorName, SocialContent, SubmitContent, SubTitle, Summary, Title, TitleForm, TopContent, TypesSolutions } from "./styles";
 import logo from '../../Assets/logo.svg'
+import logoFooter from '../../Assets/logoFooter.svg'
 import sensorFunc from '../../Assets/sensor_func.svg'
 import iconVibration from '../../Assets/icon_vibration.svg'
 import iconEnergy from '../../Assets/icon_energy.svg'
@@ -19,6 +20,12 @@ import Avatar1 from '../../Assets/Avatar1.svg'
 import Avatar2 from '../../Assets/Avatar2.svg'
 import Avatar3 from '../../Assets/Avatar3.svg'
 import Avatar4 from '../../Assets/Avatar4.svg'
+
+import Instagram from '../../Assets/instagram.svg'
+import Facebook from '../../Assets/facebook.svg'
+import Linkedin from '../../Assets/linkedin.svg'
+import Youtube from '../../Assets/youtube.svg'
+import Tiktok from '../../Assets/tiktok.svg'
 
 
 import dashboardAsset from '../../Assets/dashboardImage.jpeg'
@@ -78,28 +85,37 @@ export default function Home() {
             title={dataCardMonitoramento.title}
             description={dataCardMonitoramento.description}
           >
-            <ButtonContact titleButton="Quero monitorar Online" />
+            <SubmitContent>
+              <ButtonContact titleButton="Quero monitorar Online" />
+            </SubmitContent>
           </Card>
 
           <Card
             title={dataCardIoT.title}
             description={dataCardIoT.description}
           >
-            <ButtonContact titleButton="Quero mais insights" />
+            <SubmitContent>
+
+              <ButtonContact titleButton="Quero mais insights" />
+            </SubmitContent>
           </Card>
 
           <Card
             title={dataCardAtivos.title}
             description={dataCardAtivos.description}
           >
-            <ButtonContact titleButton="Veja CMMS na prática" />
+            <SubmitContent>
+              <ButtonContact titleButton="Veja CMMS na prática" />
+            </SubmitContent>
           </Card>
 
           <Card
             title={dataCardPreventiva.title}
             description={dataCardPreventiva.description}
           >
-            <ButtonContact titleButton="Ver o sistema Preditivo" />
+            <SubmitContent>
+              <ButtonContact titleButton="Ver o sistema Preditivo" />
+            </SubmitContent>
           </Card>
         </CardContent>
 
@@ -204,6 +220,67 @@ export default function Home() {
 
 
       </Section>
+
+      {/* Footer */}
+      <FooterContainer>
+        <img src={logoFooter} />
+
+        <TitleForm>Solicite sua Demonstração</TitleForm>
+
+        <FormContainer>
+          <form >
+            <FormContent>
+
+              <LabelField htmlFor="name">Nome</LabelField>
+              <InputField
+                type="text"
+                id="name"
+                tabIndex={0}
+                alt="Campo para inserir o nome completo"
+              />
+              <LabelField htmlFor="email">Email Profissional</LabelField>
+              <InputField
+                type="text"
+                id="email"
+                tabIndex={0}
+                alt="Campo para inserir o e-mail profissional"
+              />
+              <LabelField htmlFor="phone">Telefone</LabelField>
+              <InputField
+                type="text"
+                id="phone"
+                tabIndex={0}
+                alt="Campo para inserir o telefone"
+              />
+              <LabelField htmlFor="position">Cargo</LabelField>
+              <InputField
+                type="text"
+                id="position"
+                tabIndex={0}
+                alt="Campo para inserir o seu cargo profissional"
+              />
+
+              <SubmitContent>
+                <ButtonContact titleButton="Solicitar Demonstração" />
+              </SubmitContent>
+            </FormContent>
+          </form>
+        </FormContainer>
+
+        <SocialContent>
+          <img src={Linkedin} />
+          <img src={Facebook} />
+          <img src={Instagram} />
+          <img src={Youtube} />
+          <img src={Tiktok} />
+        </SocialContent>
+
+        <DataTractian>
+          CNPJ: CNPJ: 35.755.699/0001-84 <br />
+          © Tractian Tecnologia Ltda
+        </DataTractian>
+
+      </FooterContainer>
     </HomeContainer>
   )
 } 

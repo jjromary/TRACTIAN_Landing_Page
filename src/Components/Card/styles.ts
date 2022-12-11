@@ -11,6 +11,14 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 1.5s;
+
+  :hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1.5s;
+  }
 `;
 
 export const Title = styled.span`
