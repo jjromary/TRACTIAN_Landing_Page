@@ -5,4 +5,5 @@ export const defaultTheme = {
   "button-hover": "#32AD6F",
   "background-default": "#F9FBFC",
   "base-white": "#FFFFFF",
+  "red-error": "#FF000F",
 } as const;

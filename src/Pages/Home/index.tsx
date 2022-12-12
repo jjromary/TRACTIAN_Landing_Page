@@ -1,4 +1,4 @@
-import { AssetControlContent, CardContent, ClientsContainer, DataTractian, FeedbackContainer, FooterContainer, FormContainer, FormContent, Header, HomeContainer, ImageContainer, ImageContent, InputField, LabelField, Sensor, SensorContent, SensorDescrition, SensorName, SocialContent, SubmitContent, SubTitle, Summary, Title, TitleForm, TopContent, TypesSolutions } from "./styles";
+import { AssetControlContent, CardContent, ClientsContainer, DataTractian, FeedbackContainer, FooterContainer, Header, HomeContainer, ImageContainer, ImageContent, Sensor, SensorContent, SensorDescrition, SensorName, SocialContent, SubTitle, Summary, Title, TitleForm, TopContent, TypesSolutions } from "./styles";
 import logo from '../../Assets/logo.svg'
 import logoFooter from '../../Assets/logoFooter.svg'
 import sensorFunc from '../../Assets/sensor_func.svg'
@@ -37,6 +37,8 @@ import Card from "../../Components/Card";
 import ButtonContact from "../../Components/Button";
 import Section from "../../Components/Section";
 import CardFeedback from "../../Components/CardFeedback";
+import FormContact from "../../Components/FormContact";
+import { SubmitContent } from "../../Components/FormContact/styles";
 
 export default function Home() {
   return (
@@ -231,45 +233,7 @@ export default function Home() {
 
         <TitleForm>Solicite sua Demonstração</TitleForm>
 
-        <FormContainer>
-          <form >
-            <FormContent>
-
-              <LabelField htmlFor="name">Nome</LabelField>
-              <InputField
-                type="text"
-                id="name"
-                tabIndex={0}
-                alt="Campo para inserir o nome completo"
-              />
-              <LabelField htmlFor="email">Email Profissional</LabelField>
-              <InputField
-                type="text"
-                id="email"
-                tabIndex={0}
-                alt="Campo para inserir o e-mail profissional"
-              />
-              <LabelField htmlFor="phone">Telefone</LabelField>
-              <InputField
-                type="text"
-                id="phone"
-                tabIndex={0}
-                alt="Campo para inserir o telefone"
-              />
-              <LabelField htmlFor="position">Cargo</LabelField>
-              <InputField
-                type="text"
-                id="position"
-                tabIndex={0}
-                alt="Campo para inserir o seu cargo profissional"
-              />
-
-              <SubmitContent>
-                <ButtonContact titleButton="Solicitar Demonstração" />
-              </SubmitContent>
-            </FormContent>
-          </form>
-        </FormContainer>
+        <FormContact />
 
         <SocialContent>
           <img src={Linkedin} />
