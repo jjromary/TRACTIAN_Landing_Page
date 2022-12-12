@@ -4,4 +4,5 @@ export const defaultTheme = {
   "base-button": "#3DCC84",
   "background-default": "#F9FBFC",
   "base-white": "#FFFFFF",
+  "red-error": "#FF000F",
 } as const;
