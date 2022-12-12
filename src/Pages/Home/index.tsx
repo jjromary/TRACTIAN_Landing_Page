@@ -54,7 +54,7 @@ export default function Home() {
           </Title>
 
           <ImageContent>
-            <img src={sensorFunc} />
+            <img src={sensorFunc} alt="alustração sensor de vibração da TRACTIAN" />
           </ImageContent>
         </TopContent>
 
@@ -132,7 +132,7 @@ export default function Home() {
             Dashboards em tempo real informam a saúde de seus ativos facilitando o seu planejamento e evitando paradas desnecessárias
           </SubTitle>
 
-          <img src={dashboardAsset} />
+          <img src={dashboardAsset} alt="Imagem de um dashboard criado pelo sistema da TRACTIAN" />
         </AssetControlContent>
       </Section>
 
@@ -152,7 +152,7 @@ export default function Home() {
           </Sensor>
 
           <ImageContainer>
-            <img src={sensorVibration} />
+            <img src={sensorVibration} alt="Imagem do sensor de vibração da TRACTIAN" />
 
           </ImageContainer>
 
@@ -169,7 +169,7 @@ export default function Home() {
           </Sensor>
           <ImageContainer>
 
-            <img src={sensorEnergy} />
+            <img src={sensorEnergy} alt="Imagem do sensor de energia da TRACTIAN" />
           </ImageContainer>
 
         </SensorContent>
@@ -181,14 +181,14 @@ export default function Home() {
       <Section>
         <TitleSection title="Nossos principais clientes" />
         <ClientsContainer>
-          <img src={logoGoodyear} />
-          <img src={logoMartMinas} />
-          <img src={logoKarcher} />
-          <img src={logoPetrobras} />
-          <img src={logoSuzano} />
-          <img src={logoBoticario} />
-          <img src={logoTigre} />
-          <img src={logoRenault} />
+          <img src={logoGoodyear} alt="logo empresa Goodyear" />
+          <img src={logoMartMinas} alt="logo empresa Mart Minas" />
+          <img src={logoKarcher} alt="lodo empresa Karcher" />
+          <img src={logoPetrobras} alt="logo empresa Petrobras" />
+          <img src={logoSuzano} alt="logo empresa Suzano" />
+          <img src={logoBoticario} alt="logo empresa Boticario" />
+          <img src={logoTigre} alt="logo empresa Tigre" />
+          <img src={logoRenault} alt="logo empresa Renault" />
         </ClientsContainer>
       </Section>
 
@@ -236,11 +236,21 @@ export default function Home() {
         <FormContact />
 
         <SocialContent>
-          <img src={Linkedin} />
-          <img src={Facebook} />
-          <img src={Instagram} />
-          <img src={Youtube} />
-          <img src={Tiktok} />
+          <a href="https://www.linkedin.com/company/tractian/" target="_blank" >
+            <img src={Linkedin} alt="logo Linkedin" />
+          </a>
+          <a href="https://www.facebook.com/tractian" target="_blank">
+            <img src={Facebook} alt="logo facebook" />
+          </a>
+          <a href="https://www.instagram.com/tractian/" target="_blank">
+            <img src={Instagram} alt="logo instagram" />
+          </a>
+          <a href="https://www.youtube.com/c/TRACTIAN" target="_blank">
+            <img src={Youtube} alt="logo youtube" />
+          </a>
+          <a href="https://www.tiktok.com/@tractian" target="_blank">
+            <img src={Tiktok} alt="logo tiktok" />
+          </a>
         </SocialContent>
 
         <DataTractian>

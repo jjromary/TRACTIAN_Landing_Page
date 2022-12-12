@@ -26,11 +26,13 @@ export const dataCardIoT = {
   description:
     "Toda falha apresenta sintomas antes de acontecer – e o Smart Trac não deixa passar nenhum. Receba alertas automáticos ao menor sinal de defeito e elimine os gastos com corretivas. ",
 };
+
 export const dataCardAtivos = {
   title: "Gestão de Ativos ",
   description:
     " Saiba o que deve ser feito no dia antes mesmo de sair de casa. Controle e organize todas as suas Ordens de Serviço na interface móvel do TracOS™",
 };
+
 export const dataCardPreventiva = {
   title: "Manutenção Preventiva ",
   description:

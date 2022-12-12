@@ -23,6 +23,10 @@ export const ButtonContent = styled.button`
     background: ${(props) => props.theme["button-hover"]};
     transition: background-color 0.2s;
   }
+  :focus {
+    outline: 2px solid ${(props) => props.theme["blue-brand"]};
+    background: ${(props) => props.theme["button-hover"]};
+  }
 
   @media (min-width: 1440px) {
     width: 288px;

@@ -14,4 +14,7 @@ export const TitleContent = styled.span`
   font-size: 1.875rem;
   text-align: center;
   color: ${(props) => props.theme["base-text"]};
+  :focus {
+    outline: 2px solid ${(props) => props.theme["blue-brand"]};
+  }
 `;

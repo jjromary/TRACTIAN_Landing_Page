@@ -17,4 +17,8 @@ export const GlobalStyles = createGlobalStyle`
     body, input, text-area, button, span {
         font: 400 1rem Poppins, sans-serif;
     }
+
+    button{
+        cursor: pointer;
+    }
 `;
