@@ -57,6 +57,8 @@ export default function FormContact() {
             tabIndex={0}
             alt="Campo para inserir o e-mail profissional"
           />
+          <ErroMessage>{formState.errors?.email?.message}</ErroMessage>
+
           <LabelField htmlFor="phone">Telefone</LabelField>
           <InputField
             type="text"
@@ -66,6 +68,8 @@ export default function FormContact() {
             tabIndex={0}
             alt="Campo para inserir o telefone"
           />
+          <ErroMessage>{formState.errors?.phone?.message}</ErroMessage>
+
           <LabelField htmlFor="position">Cargo</LabelField>
           <InputField
             type="text"
@@ -74,6 +78,8 @@ export default function FormContact() {
             tabIndex={0}
             alt="Campo para inserir o seu cargo profissional"
           />
+          <ErroMessage>{formState.errors?.position?.message}</ErroMessage>
+
 
           <SubmitContent>
             <ButtonContact titleButton="Solicitar Demonstração" typeButton="submit" />

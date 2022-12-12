@@ -18,10 +18,10 @@ export const InputField = styled.input`
   border: 1px solid ${(props) => props.theme["base-text"]};
   border-radius: 5px;
   margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
 
   :focus {
-    outline: 1px solid ${(props) => props.theme["base-button"]};
-    border: none;
+    outline: 2px solid ${(props) => props.theme["blue-brand"]};
   }
 
   ::placeholder {
