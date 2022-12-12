@@ -31,7 +31,7 @@ import Tiktok from '../../Assets/tiktok.svg'
 
 import dashboardAsset from '../../Assets/dashboardImage.jpeg'
 import Solution from "../../Components/Solution";
-import { dataCardMonitoramento, dataCardIoT, dataCardAtivos, dataCardPreventiva, dataEnergy, dataSupervisorio, dataVibration } from "../../Data/data";
+import { cardsFeedback, cardsHowWorks, solutionType } from "../../Data/data";
 import TitleSection from "../../Components/Title";
 import Card from "../../Components/Card";
 import ButtonContact from "../../Components/Button";
@@ -54,7 +54,7 @@ export default function Home() {
           </Title>
 
           <ImageContent>
-            <img src={sensorFunc} />
+            <img src={sensorFunc} alt="alustração sensor de vibração da TRACTIAN" />
           </ImageContent>
         </TopContent>
 
@@ -63,18 +63,18 @@ export default function Home() {
         <TypesSolutions>
           <Solution
             icon={iconVibration}
-            title={dataVibration.title}
-            description={dataVibration.description}
+            title={solutionType.vibration.title}
+            description={solutionType.vibration.description}
           />
           <Solution
             icon={iconEnergy}
-            title={dataEnergy.title}
-            description={dataEnergy.description}
+            title={solutionType.energy.title}
+            description={solutionType.energy.description}
           />
           <Solution
             icon={iconMonitor}
-            title={dataSupervisorio.title}
-            description={dataSupervisorio.description}
+            title={solutionType.supervisorio.title}
+            description={solutionType.supervisorio.description}
           />
 
         </TypesSolutions>
@@ -85,8 +85,8 @@ export default function Home() {
         <TitleSection title="Como Funciona?" />
         <CardContent>
           <Card
-            title={dataCardMonitoramento.title}
-            description={dataCardMonitoramento.description}
+            title={cardsHowWorks.monitoramento.title}
+            description={cardsHowWorks.monitoramento.description}
           >
             <SubmitContent>
               <ButtonContact titleButton="Quero monitorar Online" />
@@ -94,8 +94,8 @@ export default function Home() {
           </Card>
 
           <Card
-            title={dataCardIoT.title}
-            description={dataCardIoT.description}
+            title={cardsHowWorks.ioT.title}
+            description={cardsHowWorks.ioT.description}
           >
             <SubmitContent>
 
@@ -104,8 +104,8 @@ export default function Home() {
           </Card>
 
           <Card
-            title={dataCardAtivos.title}
-            description={dataCardAtivos.description}
+            title={cardsHowWorks.ativos.title}
+            description={cardsHowWorks.ativos.description}
           >
             <SubmitContent>
               <ButtonContact titleButton="Veja CMMS na prática" />
@@ -113,8 +113,8 @@ export default function Home() {
           </Card>
 
           <Card
-            title={dataCardPreventiva.title}
-            description={dataCardPreventiva.description}
+            title={cardsHowWorks.preventiva.title}
+            description={cardsHowWorks.preventiva.description}
           >
             <SubmitContent>
               <ButtonContact titleButton="Ver o sistema Preditivo" />
@@ -132,7 +132,7 @@ export default function Home() {
             Dashboards em tempo real informam a saúde de seus ativos facilitando o seu planejamento e evitando paradas desnecessárias
           </SubTitle>
 
-          <img src={dashboardAsset} />
+          <img src={dashboardAsset} alt="Imagem de um dashboard criado pelo sistema da TRACTIAN" />
         </AssetControlContent>
       </Section>
 
@@ -152,9 +152,10 @@ export default function Home() {
           </Sensor>
 
           <ImageContainer>
-            <img src={sensorVibration} />
+            <img src={sensorVibration} alt="Imagem do sensor de vibração da TRACTIAN" />
 
           </ImageContainer>
+
         </SensorContent>
 
         <SensorContent>
@@ -168,24 +169,26 @@ export default function Home() {
           </Sensor>
           <ImageContainer>
 
-            <img src={sensorEnergy} />
+            <img src={sensorEnergy} alt="Imagem do sensor de energia da TRACTIAN" />
           </ImageContainer>
 
         </SensorContent>
       </Section>
 
+      <ButtonContact titleButton="Solititar demonstração" />
+
       {/* Session Clients */}
       <Section>
         <TitleSection title="Nossos principais clientes" />
         <ClientsContainer>
-          <img src={logoGoodyear} />
-          <img src={logoMartMinas} />
-          <img src={logoKarcher} />
-          <img src={logoPetrobras} />
-          <img src={logoSuzano} />
-          <img src={logoBoticario} />
-          <img src={logoTigre} />
-          <img src={logoRenault} />
+          <img src={logoGoodyear} alt="logo empresa Goodyear" />
+          <img src={logoMartMinas} alt="logo empresa Mart Minas" />
+          <img src={logoKarcher} alt="lodo empresa Karcher" />
+          <img src={logoPetrobras} alt="logo empresa Petrobras" />
+          <img src={logoSuzano} alt="logo empresa Suzano" />
+          <img src={logoBoticario} alt="logo empresa Boticario" />
+          <img src={logoTigre} alt="logo empresa Tigre" />
+          <img src={logoRenault} alt="logo empresa Renault" />
         </ClientsContainer>
       </Section>
 
@@ -195,27 +198,27 @@ export default function Home() {
         <FeedbackContainer>
           <CardFeedback
             avatar={Avatar1}
-            name="Maria"
-            position="Especialista em Manutenção"
-            feedback="Com a TRACTIAN, consigo acompanhar 100% o que está acontecendo na fábrica. Tudo é mais rápido, automático e interativo. Unindo monitoramento online, gestão de ordens de serviço e histórico acessível, fica mais fácil colocar a casa em ordem."
+            name={cardsFeedback.maria.name}
+            position={cardsFeedback.maria.position}
+            feedback={cardsFeedback.maria.feedback}
           />
           <CardFeedback
             avatar={Avatar2}
-            name="José"
-            position="Engenheiro Industrial"
-            feedback="Hoje utilizamos diariamente o sistema da Tractian que melhorou a eficiência da nossa operação, facilitando muito nosso dia a dia na manutenção. Além disso, o time Tractian é responsivo e todo o sistema está sempre evoluindo junto com feedback do cliente."
+            name={cardsFeedback.jose.name}
+            position={cardsFeedback.jose.position}
+            feedback={cardsFeedback.jose.feedback}
           />
           <CardFeedback
             avatar={Avatar3}
-            name="Lúcia"
-            position="Gerente de Operação"
-            feedback="Os sensores trouxeram maior segurança, precisão e confiabilidade. O melhor é que conseguimos acompanhar os ativos em tempo real pela plataforma ou aplicativo no celular, com as informações na palma da mão. "
+            name={cardsFeedback.lucia.name}
+            position={cardsFeedback.lucia.position}
+            feedback={cardsFeedback.lucia.feedback}
           />
           <CardFeedback
             avatar={Avatar4}
-            name="Ádila"
-            position="Supervisora de Manutenção Geral"
-            feedback="Antes da TRACTIAN, a falha acontecia sem que nós tivéssemos nenhuma chance de reação. Agora nós conseguimos identificar qualquer anomalia fora do normal e isso nos permite fazer a intervenção antes que a quebra aconteça."
+            name={cardsFeedback.adila.name}
+            position={cardsFeedback.adila.position}
+            feedback={cardsFeedback.adila.feedback}
           />
 
         </FeedbackContainer>
@@ -233,11 +236,21 @@ export default function Home() {
         <FormContact />
 
         <SocialContent>
-          <img src={Linkedin} />
-          <img src={Facebook} />
-          <img src={Instagram} />
-          <img src={Youtube} />
-          <img src={Tiktok} />
+          <a href="https://www.linkedin.com/company/tractian/" target="_blank" >
+            <img src={Linkedin} alt="logo Linkedin" />
+          </a>
+          <a href="https://www.facebook.com/tractian" target="_blank">
+            <img src={Facebook} alt="logo facebook" />
+          </a>
+          <a href="https://www.instagram.com/tractian/" target="_blank">
+            <img src={Instagram} alt="logo instagram" />
+          </a>
+          <a href="https://www.youtube.com/c/TRACTIAN" target="_blank">
+            <img src={Youtube} alt="logo youtube" />
+          </a>
+          <a href="https://www.tiktok.com/@tractian" target="_blank">
+            <img src={Tiktok} alt="logo tiktok" />
+          </a>
         </SocialContent>
 
         <DataTractian>

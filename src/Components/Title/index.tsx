@@ -8,7 +8,7 @@ interface TitleProps {
 export default function TitleSection({ title, colorText }: TitleProps) {
   return (
     <TitleContainer>
-      <TitleContent style={{ color: colorText }}>
+      <TitleContent style={{ color: colorText }} tabIndex={0}>
         {title}
 
       </TitleContent>

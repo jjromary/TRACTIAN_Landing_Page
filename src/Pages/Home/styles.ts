@@ -127,6 +127,7 @@ export const CardContent = styled.div`
 
 export const AssetControlContent = styled.div`
   width: 90%;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;

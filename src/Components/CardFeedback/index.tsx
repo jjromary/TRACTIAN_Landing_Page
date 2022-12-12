@@ -13,7 +13,7 @@ export default function CardFeedback({ avatar, name, position, feedback }: CardF
 
       <UserContent>
         <Avatar>
-          <img src={avatar} />
+          <img src={avatar} alt="foto do funcionário que passou o feedback" />
         </Avatar>
 
         <ClientsData>
