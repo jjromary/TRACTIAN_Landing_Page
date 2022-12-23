@@ -13,6 +13,7 @@
 ## 💻 Sobre o projeto
 
  - Esse prrojeto é um teste técnico para uma vaga de Front-End Web Developer na empresa TARCTIAN.
+ - Link de acesso: [Landdidng Page](https://vercel.com/jjromary/tractian-landing-page/GY8QsPMcbW7SzHe4zNrf1KDWpm8d)
 
 
 ## 🛠 Tecnologias
